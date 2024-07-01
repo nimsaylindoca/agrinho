@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHome - Comidas Fitness que Você Pode Cultivar em Casa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+</head>
+<body>
+
+    <header>
+        <h1>FitHome - Comidas Fitness que Você Pode Cultivar em Casa</h1>
+        <p>Transforme sua alimentação com receitas saudáveis e ingredientes frescos do seu próprio jardim.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre o FitHome</a></li>
+            <li><a href="#receitas">Receitas Fitness</a></li>
+            <li><a href="#guia">Guia de Cultivo</a></li>
+            <li><a href="#artigos">Artigos e Dicas</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre o FitHome</h2>
+        <p>O FitHome é um blog dedicado a ensinar receitas fitness que você pode cultivar em casa. Descubra como fazer smoothies energéticos com ingredientes frescos da sua horta, saladas saudáveis com vegetais cultivados por você mesmo e pratos principais utilizando ervas aromáticas do seu jardim.</p>
+    </section>
+
+    <section id="receitas">
+        <h2>Receitas Fitness</h2>
+
+        <div class="receita">
+            <h3>Smoothie Energético</h3>
+            <p><strong>Ingredientes:</strong> Espinafre, banana, morangos, leite de amêndoas.</p>
+            <p><strong>Modo de preparo:</strong> Bata todos os ingredientes no liquidificador até obter uma mistura homogênea. Sirva gelado.</p>
+        </div>
+
+        <div class="receita">
+            <h3>Salada Fresca</h3>
+            <p><strong>Ingredientes:</strong> Alface, rúcula, tomate, pepino, azeite de oliva, vinagre balsâmico.</p>
+            <p><strong>Modo de preparo:</strong> Lave bem todos os vegetais, corte em pedaços e tempere com azeite e vinagre balsâmico.</p>
+        </div>
+
+        <div class="receita">
+            <h3>Frango Grelhado com Ervas</h3>
+            <p><strong>Ingredientes:</strong> Peito de frango, alecrim, tomilho, limão, azeite de oliva.</p>
+            <p><strong>Modo de preparo:</strong> Tempere o frango com alecrim, tomilho e suco de limão. Grelhe em uma frigideira com azeite até dourar.</p>
+        </div>
+
+    </section>
+
+    <section id="guia">
+        <h2>Guia de Cultivo</h2>
+        <p>Aprenda como montar um pequeno jardim fitness em casa e cuidar das suas plantas para garantir ingredientes frescos e nutritivos em suas receitas.</p>
+        <ul>
+            <li><strong>Escolha de Plantas:</strong> Opte por ervas, vegetais e frutas que se adaptem ao clima e ao espaço disponível.</li>
+            <li><strong>Cuidados Básicos:</strong> Mantenha o solo bem drenado e regue regularmente, conforme as necessidades das plantas.</li>
+            <li><strong>Colheita:</strong> Colha os ingredientes no momento certo para garantir sabor e nutrientes máximos.</li>
+        </ul>
+    </section>
+
+    <section id="artigos">
+        <h2>Artigos e Dicas</h2>
+        <p>Leia nossos artigos sobre os benefícios de uma alimentação fitness e sustentável, dicas para escolher os melhores ingredientes e histórias inspiradoras de sucesso com o FitHome.</p>
+    </section>
+
+    <script>
+        // Script para rolagem suave ao clicar nos links do menu
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
