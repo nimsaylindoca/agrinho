@@ -1,90 +1,152 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f9f4; /* Verde claro para o fundo */
-    margin: 0;
-    padding: 0;
-    color: #333; /* Cor do texto */
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHome - Comidas Fitness que Você Pode Cultivar em Casa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o arquivo CSS externo -->
+    <style>
+        /* Estilos adicionais diretamente no cabeçalho se necessário */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f9f4; /* Verde claro para o fundo */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Cor do texto */
+        }
 
-header {
-    background-color: #215a24a1; /* Verde escuro para o cabeçalho */
-    color: #fff; /* Texto branco para o cabeçalho */
-    text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
-}
+        header {
+            background-color: #215a24a1; /* Verde escuro para o cabeçalho */
+            color: #ffffff; /* Texto branco para o cabeçalho */
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
 
-h1 {
-    margin: 0;
-}
+        h1 {
+            margin: 0;
+        }
 
-p {
-    margin-bottom: 15px;
-}
+        p {
+            margin-bottom: 15px;
+        }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    background-color: #215a24a1; /* Verde escuro para o cabeçalho */
-    background-color: #215a24a1; /* Verde escuro para o cabeçalho */
-    background-color: ; /* Azul claro para o menu */
-    margin: 0;
-}
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            background-color: #215a24a1; /* Verde escuro para o cabeçalho */
+            margin: 0;
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-nav ul li a {
-    display: inline-block;
-    color: #fff; /* Texto branco para os links do menu */
-    padding: 10px;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
-}
+        nav ul li a {
+            display: inline-block;
+            color: #ffffff; /* Texto branco para os links do menu */
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
 
-nav ul li a:hover {
-    background-color: #479954a9; /* Azul mais escuro ao passar o mouse nos links */
-}
+        nav ul li a:hover {
+            background-color: #479954a9; /* Azul mais escuro ao passar o mouse nos links */
+        }
 
-section {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #afecb94f;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-h2 {
-    color: #2c6d56; /* Verde escuro para os títulos das seções */
-    margin-bottom: 15px;
-}
+        h2 {
+            color: #2c6d56; /* Verde escuro para os títulos das seções */
+            margin-bottom: 15px;
+        }
 
-.receita {
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #f8f9fa; /* Fundo das receitas */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        .receita {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #96c28b5b; /* Fundo das receitas */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.receita h3 {
-    color: #2c6d56; /* Verde escuro para os títulos das receitas */
-    margin-top: 0;
-}
+        .receita h3 {
+            color: #2c6d56; /* Verde escuro para os títulos das receitas */
+            margin-top: 0;
+        }
 
-.receita p {
-    margin-bottom: 10px;
-}
-.detalhes {
-    display: none; /* Inicialmente oculto */
-    margin-top: 10px;
-}
+        .receita p {
+            margin-bottom: 10px;
+        }
 
-.detalhes.visivel {
-    display: block; /* Exibe quando a classe visivel é aplicada */
-}
+        .detalhes {
+            display: none; /* Inicialmente oculto */
+            margin-top: 10px;
+        }
 
+        .detalhes.visivel {
+            display: block; /* Exibe quando a classe visivel é aplicada */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>FitHome - Comidas Fitness que Você Pode Cultivar em Casa</h1>
+        <p>Transforme sua alimentação com receitas saudáveis e ingredientes frescos do seu próprio jardim.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre o FitHome</a></li>
+            <li><a href="#receitas">Receitas Fitness</a></li>
+            <li><a href="#guia">Guia de Cultivo</a></li>
+            <li><a href="#artigos">Artigos e Dicas</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre o FitHome</h2>
+        <p>O FitHome é um blog dedicado a ensinar receitas fitness que você pode cultivar em casa. Descubra como fazer smoothies energéticos com ingredientes frescos da sua horta, saladas saudáveis com vegetais cultivados por você mesmo e pratos principais utilizando ervas aromáticas do seu jardim.</p>
+        <p>Nosso objetivo é inspirar hábitos alimentares saudáveis e sustentáveis, incentivando o cultivo próprio de alimentos e o uso de ingredientes naturais em suas refeições diárias.</p>
+        <img src="smoothie-morango.jpg" alt="Smoothie de Morango" style="width: 80%; max-width: 600px; display: block; margin: 20px auto;">
+        <p>Experimente nossas receitas e transforme sua alimentação com saúde e sabor!</p>
+    </section>
+
+    <section id="receitas">
+        <h2>Receitas Fitness</h2>
+
+        <div class="receita">
+            <h3>Smoothie Energético</h3>
+            <p><strong>Ingredientes:</strong> Espinafre, banana, morangos, leite de amêndoas.</p>
+            <p><strong>Benefícios:</strong> Rico em antioxidantes, vitaminas e minerais essenciais para energia e saúde.</p>
+            <p><strong>Modo de preparo:</strong> Bata todos os ingredientes no liquidificador até obter uma mistura homogênea. Sirva gelado.</p>
+            <p><strong>Variações:</strong> Substitua espinafre por couve, adicione sementes de chia para mais fibras.</p>
+        </div>
+
+        <div class="receita">
+            <h3>Salada Fresca</h3>
+            <p><strong>Ingredientes:</strong> Alface, rúcula, tomate, pepino, azeite de oliva, vinagre balsâmico.</p>
+            <p><strong>Benefícios:</strong> Fonte de fibras, vitaminas e minerais essenciais para saúde digestiva e imunidade.</p>
+            <p><strong>Modo de preparo:</strong> Lave bem todos os vegetais, corte em pedaços e tempere com azeite e vinagre balsâmico.</p>
+            <p><strong>Variações:</strong> Adicione grãos integrais como quinoa, acrescente frutas como morangos para um toque doce.</p>
+        </div>
+
+        <div class="receita">
+            <h3>Frango Grelhado com Ervas</h3>
+            <p><strong>Ingredientes:</strong> Peito de frango, alecrim, tomilho, limão, azeite de oliva.</p>
+            <p><strong>Benefícios:</strong> Proteína magra e ervas antioxidantes para fortalecimento muscular e saúde geral.</p>
+            <p><strong>Modo de preparo:</strong> Tempere o frango com alecrim, tomilho e suco de limão. Grelhe em uma frigideira com azeite até dourar.</p>
+            <p><strong>Variações:</strong> Experimente marinadas diferentes com iogurte natural e especiarias, sirva com legumes grelhados.</p>
+        </div>
+
+    </s
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
